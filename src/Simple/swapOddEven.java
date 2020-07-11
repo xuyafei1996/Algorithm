@@ -2,7 +2,6 @@ package Simple;
 
 import javax.swing.*;
 import java.util.Scanner;
-//123
 /**¡¾ÎÊÌâÃèÊö¡¿
  * ¡¾²âÊÔÓÃÀı¡¿
  * 2,4,6,1,3,5
