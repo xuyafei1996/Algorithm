@@ -2,7 +2,7 @@ package Simple;
 
 import javax.swing.*;
 import java.util.Scanner;
-
+//123
 /**【问题描述】
  * 【测试用例】
  * 2,4,6,1,3,5
@@ -24,7 +24,6 @@ public class swapOddEven {
             swap(num);
             //打印
             print(num);
-
         }
     }
 
