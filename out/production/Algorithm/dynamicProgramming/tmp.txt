@@ -1,0 +1,58 @@
+【M1.记忆表格】
+private static int MT(n){
+  //1.建表：表的大小= n + 边界尺寸x
+  //        为什么不设置为n,因为如果n<边界X，则f[X]会数组越界
+  int[] dp = new int[n+x];
+  //2.确定边界
+  dp[1]=…，dp[2]=…，dp[3]=…；
+  //3.描述方程
+  if(n>x){
+          int a1 = Func(MT(…));
+          int a2 = Func(MT(…));
+          int a3 = Func(MT(…));
+          dp[n] = Equation(a1,a2,a3)
+  }
+  return dp[n];
+}
+
+【M2.表格法】
+private static int T(n){
+  //用逻辑位序表达
+  int[] dp = new int[n+x]
+  //确定边界
+  dp[1]=…，dp[2]=…，dp[3]=…；
+  //描述方程（自底向上填表）
+  if(n>x){
+      //表格法一定有for循环(不递归只能for循环)
+      for(int i=x+1;i<=n;i++){
+          int a1 = Func(dp[…]);
+          int a2 = Func(dp[…]);
+          int a3 = Func(dp[…]);
+          dp[i] = Equation(a1,a2,a3)
+      }
+  }
+  return dp[n];
+}
+
+【M3.表格法改进】
+private static int T(n){
+  //确定边界
+  int bod1=;int bod2=;int bod3=;
+  //描述方程
+  if(n>x){
+      //初始化中间变量
+      int a1= ;int a2= ;int a3= ;
+      for(int i=x+1;i<=n;i++){
+          //中间变量保存结果
+          a1 = Func1(f[…]);
+          a2 = Func1(f[…]);
+          a3 = Func1(f[…]);
+          f[i] = Equation(a1,a2,a3)
+          //变量前移
+          a1 = Func2(a2);
+          a2 = Func2(a3);
+          a3 = Func3(f[i]);
+      }
+  }
+  return f[n];
+}
